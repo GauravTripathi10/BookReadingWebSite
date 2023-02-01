@@ -11,6 +11,44 @@ html,body{
 #main{
     width: 100vw;
     height: 100vh;
+    
+}
+#screen{
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    /* background-color: yellowgreen; */
+
+}
+#screen>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 0.1vw solid black;
+    border-radius: 5vw;
+}
+#line1{
+    position: absolute;
+    right: 65%;
+    transform: rotate(50deg);
+    width: 40%;
+    height: 0.4vh;
+    background-color: black;
+}
+#line2{
+    position: absolute;
+    right: -5%;
+    transform: rotate(-50deg);
+    width: 40%;
+    height: 0.4vh;
+    background-color: black;
 }
 #nav{
     /* position: absolute; */
